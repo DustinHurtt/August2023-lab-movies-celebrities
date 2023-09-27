@@ -1,0 +1,15 @@
+<h2>Movie Details</h2>
+
+<h3>{{title}}</h3>
+<p>genre: {{genre}}</p>
+<p>plot: {{plot}}</p>
+
+<p>Starring -</p>
+{{#each cast}}
+    <p>{{name}}</p>
+    <p>occupation: {{occupation}}</p>
+    <p>- "{{catchPhrase}}"</p>
+{{/each}}
+{{!-- Add an <h2> for the page's heading.
+Display tags with the movie's title, genre and plot.
+Use an hbs #each loop to display the cast's name, occupation and catchPhrase --}}
